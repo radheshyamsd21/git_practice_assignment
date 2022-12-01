@@ -1,12 +1,12 @@
-let num = 13;
+Program to check given number is prime or not 
 
-let i=1;
+let num = 11;
 
 let factor=0;
 
-for (let i=1; i<num; i++){
+for (let i=1; i<=num; i++){
 
-if(i%2!=0)
+if(num%i==0)
 
 factor++
 }
@@ -25,20 +25,20 @@ console.log("No")
 
 
 
-
-PROBLEM_2
-
+PROBLEM_2  program to check string is palindrome or not
 
 
-let str= ["naman"]
+
+
+let str= "naman";
 
 let bag= "";
 
- for(let i=str.length; i--){
+ for(let i=str.length-1;i>=0;i--){
 
-(bag+=str)
+        bag+=str[i]
 }
-if(bag !=str){
+if(bag ==str) {
 console.log("Yes")
 }
 else{
